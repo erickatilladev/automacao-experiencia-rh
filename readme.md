@@ -1,20 +1,53 @@
-🤖 Script de Notificação de Período de Experiência (Google Apps Script)
-Este script foi criado para automatizar o aviso de término do período de experiência de colaboradores em diferentes unidades de uma escola, utilizando planilhas do Google Sheets como base de dados.
+# 🤖 Automação de Notificação de Período de Experiência (Google Apps Script)
 
-📋 Funcionalidades
-Verifica automaticamente colunas de datas de cada aba (ex: Lagoa, Calu, Jacira).
+Este projeto é um script desenvolvido em **Google Apps Script** para automatizar notificações sobre o fim do período de experiência de colaboradores, com base em uma **planilha do Google Sheets** que centraliza os dados de múltiplas unidades de uma escola.
 
-Envia e-mail se o término da experiência estiver a 7 dias ou menos.
 
-Suporte para períodos de 60 e 90 dias (com prorrogação).
 
-Agendado via acionador de tempo (trigger do Apps Script).
+## 📋 Funcionalidades
 
-🔧 Como usar
-Crie uma planilha com abas nomeadas conforme as unidades.
+* ✅ **Leitura automática** das datas de admissão em múltiplas abas (ex: `Lagoa`, `Calu`, `Jacira`), cada uma representando uma unidade.
+* 📅 **Cálculo dinâmico** do fim do período de experiência (60 ou 90 dias, com suporte para prorrogação).
+* 🔔 **Envio automático de e-mails** para o RH quando o término da experiência estiver a 7 dias ou menos.
+* ⏰ **Execução agendada diariamente** com **gatilhos (triggers)** nativos do Google Apps Script.
 
-Adicione o script no Google Apps Script.
 
-Configure o acionador (trigger) para rodar diariamente.
 
-Pronto! Ele envia e-mails automáticos pra RH.
+## 🚀 Como usar
+
+1. **Crie uma planilha no Google Sheets**
+   Estruture cada aba com o nome das unidades (ex: `Lagoa`, `Calu`, `Jacira`). As colunas devem incluir:
+
+   * Nome do colaborador
+   * Data de admissão
+   * Status da prorrogação (opcional)
+
+2. **Abra o Apps Script:**
+   No menu do Sheets, clique em `Extensões > Apps Script`.
+
+3. **Cole o código do script** (disponível no arquivo `script.gs` deste repositório).
+
+4. **Configure o acionador de tempo (trigger):**
+   No Apps Script, vá em `Gatilhos` e adicione uma nova execução agendada para rodar diariamente.
+
+5. **Pronto!** Agora o RH vai receber os avisos no tempo certo, sem dor de cabeça.
+
+
+## ✉️ Exemplo de E-mail Enviado
+
+> Assunto: \[Alerta] Fim do Período de Experiência – Fulano da unidade Jacira
+>
+> O colaborador **Fulano da Silva**, da unidade **Jacira**, está a 7 dias do fim do período de experiência.
+>
+> Verifique necessidade de prorrogação ou efetivação.
+
+
+## 💡 Possíveis melhorias futuras
+
+* [ ] Integração com banco de dados externo ou API
+* [ ] Interface de configuração personalizada por unidade
+* [ ] Envio de resumo semanal com status de todos os colaboradores
+
+
+
+Se quiser, eu já formato isso num `readme.md` pra tu colar direto. Quer?
