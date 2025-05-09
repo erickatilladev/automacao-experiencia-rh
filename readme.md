@@ -48,6 +48,3 @@ Este projeto é um script desenvolvido em **Google Apps Script** para automatiza
 * [ ] Interface de configuração personalizada por unidade
 * [ ] Envio de resumo semanal com status de todos os colaboradores
 
-
-
-Se quiser, eu já formato isso num `readme.md` pra tu colar direto. Quer?
